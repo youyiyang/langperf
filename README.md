@@ -13,6 +13,7 @@ Ruby 2.4.0p0                 | 15s
 Crystal 0.23.1               | 2.7s
 Python 2.7.6                 | 45s
 Python 3.6.1                 | 66s
+Python 3.6.1 / Cython 0.27.3 | 0.38s
 Python 3.6.1 / Numba 0.33.0  | 2.2s
 Python 3.5.3 / PyPy 5.10.1   | 2.6s
 Elixir 1.5.2 / Erlang/OTP 20 | 5.7s
