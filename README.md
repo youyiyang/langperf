@@ -10,7 +10,8 @@ Language                     | Finished in seconds
 C (gcc, no optimization)     | 2s
 C (gcc, -O3 optimization)    | 0.37s
 Ruby 2.4.0p0                 | 15s
-Crystal 0.23.1               | 2.7s
+Crystal 0.24.1               | 2.76s
+Crystal 0.24.1 pre-compiled  | 1.65s
 Python 2.7.6                 | 45s
 Python 3.6.1                 | 66s
 Python 3.6.1 / Cython 0.27.3 | 0.38s
