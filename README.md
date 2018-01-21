@@ -5,22 +5,24 @@ Maybe not so scientific, it just provides a brief concept.
 
 Here are the results for __Fibonacci sequence fib(40)__ using recursive function calls, single-threaded, on Thinkpad X200, Ubuntu 14.04:
 
-Language                     | Finished in seconds
------------------------------|--------------------
-C (gcc, no optimization)     | 2s
-C (gcc, -O3 optimization)    | 0.37s
-Ruby 2.4.0p0                 | 15s
-Crystal 0.24.1               | 2.76s
-Crystal 0.24.1 pre-compiled  | 1.65s
-Python 2.7.6                 | 45s
-Python 3.6.1                 | 66s
-Python 3.6.1 / Cython 0.27.3 | 0.38s
-Python 3.6.1 / Numba 0.33.0  | 2.2s
-Python 3.5.3 / PyPy 5.10.1   | 2.6s
-Elixir 1.5.2 / Erlang/OTP 20 | 5.7s
-Go 1.9.2                     | 2.25s
-Go 1.9.2 pre-compiled        | 1.97s
-Java 1.8.0_161               | 0.76s
+Language                       | Finished in seconds
+-------------------------------|--------------------
+C/gcc 4.8.4 (no optimization)  | 2s
+C/gcc 4.8.4 (-O3 optimization) | 0.37s
+Ruby 2.4.0p0                   | 15s
+Crystal 0.24.1                 | 2.76s
+Crystal 0.24.1 pre-compiled    | 1.65s
+Python 2.7.6                   | 45s
+Python 3.6.1                   | 66s
+Python 3.6.1 / Cython 0.27.3   | 0.38s
+Python 3.6.1 / Numba 0.33.0    | 2.2s
+Python 3.5.3 / PyPy 5.10.1     | 2.6s
+Elixir 1.5.2 / Erlang/OTP 20   | 5.7s
+Go 1.9.2                       | 2.25s
+Go 1.9.2 pre-compiled          | 1.97s
+Java 1.8.0_161                 | 0.76s
+Rust 1.23.0 (no optimization)  | 2.4s
+Rust 1.23.0 (-O optimization)  | 0.8s
 
 ### C code
 ```c
@@ -123,3 +125,19 @@ public class Fib {
     }
 }
 ```
+
+### Rust code
+```rust
+fn fib(n: i64) -> i64 {
+    if n < 3 {
+        1
+    } else {
+        fib(n - 2) + fib(n - 1)
+    }
+}
+
+fn main() {
+    print!("fib(40) = {}\n", fib(40));
+}
+```
+
