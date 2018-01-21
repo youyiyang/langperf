@@ -18,6 +18,8 @@ Python 3.6.1 / Cython 0.27.3 | 0.38s
 Python 3.6.1 / Numba 0.33.0  | 2.2s
 Python 3.5.3 / PyPy 5.10.1   | 2.6s
 Elixir 1.5.2 / Erlang/OTP 20 | 5.7s
+Go 1.9.2                     | 2.25s
+Go 1.9.2 pre-compiled        | 1.97s
 
 ### C code
 ```c
@@ -78,4 +80,24 @@ defmodule Math do
 end
 
 IO.puts Math.fib(40)
+```
+
+### Go code
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func fib(n int) int {
+    if n < 3 {
+        return 1
+    }
+    return fib(n-2) + fib(n-1)
+}
+
+func main() {
+    fmt.Printf("fib(40) = %d\n", fib(40))
+}
 ```
