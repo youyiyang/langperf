@@ -11,26 +11,19 @@ C/gcc 4.8.4 (no optimization)    | 2s
 C/gcc 4.8.4 (-O3 optimization)   | 0.37s
 C/clang 4.0.1 (no optimization)  | 2.08s
 C/clang 4.0.1 (-O3 optimization) | 1.13s
-                                 |
 Rust 1.23.0 (no optimization)    | 2.4s
 Rust 1.23.0 (-O optimization)    | 0.8s
-                                 |
 Go 1.9.2                         | 2.25s
 Go 1.9.2 pre-compiled            | 1.97s
-                                 |
 Java 1.8.0_161                   | 0.76s
-                                 |
 Python 2.7.6                     | 45s
 Python 3.6.1                     | 66s
 Python 3.6.1 / Cython 0.27.3     | 0.38s
 Python 3.6.1 / Numba 0.33.0      | 2.2s
 Python 3.5.3 / PyPy 5.10.1       | 2.6s
-                                 |
 Ruby 2.4.0p0                     | 15s
-                                 |
 Crystal 0.24.1                   | 2.76s
 Crystal 0.24.1 pre-compiled      | 1.65s
-                                 |
 Elixir 1.5.2 / Erlang/OTP 20     | 5.7s
 
 ### C code
