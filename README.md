@@ -20,6 +20,7 @@ Python 3.5.3 / PyPy 5.10.1   | 2.6s
 Elixir 1.5.2 / Erlang/OTP 20 | 5.7s
 Go 1.9.2                     | 2.25s
 Go 1.9.2 pre-compiled        | 1.97s
+Java 1.8.0_161               | 0.76s
 
 ### C code
 ```c
