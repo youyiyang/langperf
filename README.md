@@ -16,6 +16,7 @@ Rust 1.23.0 (-O optimization)    | 0.8s
 Go 1.9.2                         | 2.25s
 Go 1.9.2 pre-compiled            | 1.97s
 Java 1.8.0_161                   | 0.76s
+JavaScript/node.js 6.11.5        | 1.95s
 Python 2.7.6                     | 45s
 Python 3.6.1                     | 66s
 Python 3.6.1 / Cython 0.27.3     | 0.38s
@@ -141,5 +142,18 @@ fn fib(n: i64) -> i64 {
 fn main() {
     print!("fib(40) = {}\n", fib(40));
 }
+```
+
+### JavaScript code
+```javascript
+function fib(n)
+{
+    if (n < 3)
+        return 1;
+    else
+        return fib(n - 2) + fib(n - 1);
+}
+
+console.log(fib(40));
 ```
 
