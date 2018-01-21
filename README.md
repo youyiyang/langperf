@@ -5,26 +5,28 @@ Maybe not so scientific, it just provides a brief concept.
 
 Here are the results for __Fibonacci sequence fib(40)__ using recursive function calls, single-threaded, on Thinkpad X200, Ubuntu 14.04:
 
-| Language                         | Finished in seconds |
-| -------------------------------- | ------------------- |
-| C/gcc 4.8.4 (no optimization)    | 2s                  |
-| C/gcc 4.8.4 (-O3 optimization)   | 0.37s               |
-| C/clang 4.0.1 (no optimization)  | 2.08s               |
-| C/clang 4.0.1 (-O3 optimization) | 1.13s               |
-| Rust 1.23.0 (no optimization)    | 2.4s                |
-| Rust 1.23.0 (-O optimization)    | 0.8s                |
-| Go 1.9.2                         | 2.25s               |
-| Go 1.9.2 pre-compiled            | 1.97s               |
-| Java 1.8.0_161                   | 0.76s               |
-| Python 2.7.6                     | 45s                 |
-| Python 3.6.1                     | 66s                 |
-| Python 3.6.1 / Cython 0.27.3     | 0.38s               |
-| Python 3.6.1 / Numba 0.33.0      | 2.2s                |
-| Python 3.5.3 / PyPy 5.10.1       | 2.6s                |
-| Ruby 2.4.0p0                     | 15s                 |
-| Crystal 0.24.1                   | 2.76s               |
-| Crystal 0.24.1 pre-compiled      | 1.65s               |
-| Elixir 1.5.2 / Erlang/OTP 20     | 5.7s                |
+Language                         | Finished in seconds
+---------------------------------|--------------------
+C/gcc 4.8.4 (no optimization)    | 2s
+C/gcc 4.8.4 (-O3 optimization)   | 0.37s
+C/clang 4.0.1 (no optimization)  | 2.08s
+C/clang 4.0.1 (-O3 optimization) | 1.13s
+Rust 1.23.0 (no optimization)    | 2.4s
+Rust 1.23.0 (-O optimization)    | 0.8s
+Go 1.9.2                         | 2.25s
+Go 1.9.2 pre-compiled            | 1.97s
+OCaml 4.02.3                     | 1.48s
+Java 1.8.0_161                   | 0.76s
+JavaScript/node.js 6.11.5        | 1.95s
+Python 2.7.6                     | 45s
+Python 3.6.1                     | 66s
+Python 3.6.1 / Cython 0.27.3     | 0.38s
+Python 3.6.1 / Numba 0.33.0      | 2.2s
+Python 3.5.3 / PyPy 5.10.1       | 2.6s
+Ruby 2.4.0p0                     | 15s
+Crystal 0.24.1                   | 2.76s
+Crystal 0.24.1 pre-compiled      | 1.65s
+Elixir 1.5.2 / Erlang/OTP 20     | 5.7s
 
 ### C code
 ```c
@@ -145,7 +147,7 @@ fn main() {
 
 ### OCaml code
 
-``````ocaml
+```ocaml
 let rec fib n =
   if n < 3 then
     1
@@ -154,5 +156,17 @@ let rec fib n =
 
 let () =
   Printf.printf "%d\n" (fib 40)
-``````
+```
 
+### JavaScript code
+```javascript
+function fib(n)
+{
+    if (n < 3)
+        return 1;
+    else
+        return fib(n - 2) + fib(n - 1);
+}
+
+console.log(fib(40));
+```
