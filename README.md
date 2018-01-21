@@ -15,6 +15,7 @@ Rust 1.23.0 (no optimization)    | 2.4s
 Rust 1.23.0 (-O optimization)    | 0.8s
 Go 1.9.2                         | 2.25s
 Go 1.9.2 pre-compiled            | 1.97s
+OCaml 4.02.3                     | 1.48s
 Java 1.8.0_161                   | 0.76s
 JavaScript/node.js 6.11.5        | 1.95s
 Python 2.7.6                     | 45s
@@ -144,6 +145,19 @@ fn main() {
 }
 ```
 
+### OCaml code
+
+```ocaml
+let rec fib n =
+  if n < 3 then
+    1
+  else
+    fib (n-1) + fib (n-2)
+
+let () =
+  Printf.printf "%d\n" (fib 40)
+```
+
 ### JavaScript code
 ```javascript
 function fib(n)
@@ -156,4 +170,3 @@ function fib(n)
 
 console.log(fib(40));
 ```
-
