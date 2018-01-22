@@ -1,9 +1,11 @@
-# Programming language raw performance tests
+## Programming language raw performance tests
 
 Some simple tests measuring performance of programming languages.
 Maybe not so scientific, it just provides a brief concept.
 
 Here are the results for __Fibonacci sequence fib(40)__ using recursive function calls, single-threaded, on Thinkpad X200, Ubuntu 14.04:
+
+### Natively compiled
 
 Language                         | Finished in seconds
 ---------------------------------|--------------------
@@ -16,10 +18,18 @@ Rust 1.23.0 (-O optimization)    | 0.8s
 Go 1.9.2                         | 2.25s
 Go 1.9.2 pre-compiled            | 1.97s
 OCaml 4.02.3                     | 1.48s
+
+### JVM platform
+Language                         | Finished in seconds
+---------------------------------|--------------------
 Java 1.8.0_161                   | 0.76s
 Scala 2.12.4                     | 0.72s
 Clojure 1.9.0                    | 4.4s
 Kotlin 1.2.0 (JRE 1.8.0_161-b12) | 0.8s
+
+### Scripting / JIT-compiled languages
+Language                         | Finished in seconds
+---------------------------------|--------------------
 JavaScript/node.js 6.11.5        | 1.95s
 Python 2.7.6                     | 45s
 Python 3.6.1                     | 66s
@@ -29,6 +39,10 @@ Python 3.5.3 / PyPy 5.10.1       | 2.6s
 Ruby 2.4.0p0                     | 15s
 Crystal 0.24.1                   | 2.76s
 Crystal 0.24.1 pre-compiled      | 1.65s
+
+### BEAM (Erlang VM) platform
+Language                         | Finished in seconds
+---------------------------------|--------------------
 Elixir 1.5.2 / Erlang/OTP 20     | 5.7s
 
 ### C code
