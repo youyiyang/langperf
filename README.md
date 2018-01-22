@@ -17,6 +17,7 @@ Go 1.9.2                         | 2.25s
 Go 1.9.2 pre-compiled            | 1.97s
 OCaml 4.02.3                     | 1.48s
 Java 1.8.0_161                   | 0.76s
+Scala 2.12.4                     | 0.72s
 Clojure 1.9.0                    | 4.4s
 Kotlin 1.2.0 (JRE 1.8.0_161-b12) | 0.8s
 JavaScript/node.js 6.11.5        | 1.95s
