@@ -5,7 +5,7 @@ Maybe not so scientific, it just provides a brief concept.
 
 Here are the results for __Fibonacci sequence fib(40)__ using recursive function calls, single-threaded, on Thinkpad X200, Ubuntu 14.04:
 
-### Natively compiled
+### Group 1
 
 Language                         | Finished in seconds
 ---------------------------------|--------------------
@@ -19,15 +19,16 @@ Go 1.9.2                         | 2.25s
 Go 1.9.2 pre-compiled            | 1.97s
 OCaml 4.02.3                     | 1.48s
 
-### JVM platform
+### Group 2
 Language                         | Finished in seconds
 ---------------------------------|--------------------
 Java 1.8.0_161                   | 0.76s
 Scala 2.12.4                     | 0.72s
 Clojure 1.9.0                    | 4.4s
 Kotlin 1.2.0 (JRE 1.8.0_161-b12) | 0.8s
+C# / Mono 3.2.8                  | 1.66s
 
-### Scripting / JIT-compiled languages
+### Group 3
 Language                         | Finished in seconds
 ---------------------------------|--------------------
 JavaScript/node.js 6.11.5        | 1.95s
@@ -40,7 +41,7 @@ Ruby 2.4.0p0                     | 15s
 Crystal 0.24.1                   | 2.76s
 Crystal 0.24.1 pre-compiled      | 1.65s
 
-### BEAM (Erlang VM) platform
+### Group 4
 Language                         | Finished in seconds
 ---------------------------------|--------------------
 Elixir 1.5.2 / Erlang/OTP 20     | 5.7s

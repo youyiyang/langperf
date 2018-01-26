@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace feibi
 {
@@ -15,11 +11,13 @@ namespace feibi
             else
                 return fib(n - 2) + fib(n - 1);
         }
+
         static void Main(string[] args)
         {
             Console.WriteLine("fib(40) = {0}", fib(40));
-            Console.ReadLine();
-           
         }
     }
 }
+
+// $ mono-csc fib.cs
+// $ time ./fib.exe
